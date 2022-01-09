@@ -33,6 +33,9 @@ Also, as a required parameter, the preload of the list of characters was added. 
 -	Show the list of liked characters with filter Box using Redux;
 -	Make it possible to add a character's photo using Redux.
 
+## Environment
+Clone this repository to your machine. Use the npm or yarn install to install the dependensies of app. Use VS-Code to work with the app.
+
 ## View 
 ![image](https://user-images.githubusercontent.com/46706194/148694140-484734c9-ce3a-4b52-af3b-2eb6c333159b.png)
 ![image](https://user-images.githubusercontent.com/46706194/148694152-606a54e5-c472-4f12-8c16-075421fc2252.png)
