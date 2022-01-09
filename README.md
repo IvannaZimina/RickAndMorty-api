@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Task
+Create a basic web-app with Rick and Morty characters.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Stack
+### Backend
+The data were getting from (https://rickandmortyapi.com/documentation .)
+### Frontend
+JavaScript, React, Redux, localStorage via redux-persist, Sass (SCSS).
+### Libraries
+Material UI, redux-persist.
 
-## Available Scripts
+## Description 
+There was created a basic React-app with Create React App. 
+There were developed the following pages:
+-  the main page with a list of characters and autocomplete selection field;
+-  a page with info about a character from a list.
+On the main page, there was created a list of characters and autocomplete field with Material UI library. The name and status of characters are the link to the character info page (an ID of the character used for navigation in url).
+The autocomplete on the main page allows to filter the one of characters and reset the filter (back to a list of characters). The list of characters is transformed via Redux. The actions with autocomplete update the array of characters in redux store. Also, it changes in local Storage automatically because of using redux-persist library.
+The page with info of characters was created with a card component from Material UI library. It contains the following information:
+-  name of character;
+-  status of character;
+-  date of creation;
+-  avatar of character;
+-  gender and species fields;
+-  like icon;
+-  list of episodes as links.
+The like icon is functional to click. It changes color to red or grey if the user clicks on it – one of examples of UI of like/dislike. The episode also has its functional – roll down and roll up the list with link to episodes.
+Also, as a required parameter, the preload of the list of characters was added. You can see the gif with snail if the list is loading. If it takes more than one minute, because the work of api – please, update the pageю
 
-In the project directory, you can run:
+## The next level of upgrading:
+-	SignIn by Facebook or Linkedin using Passport.js;
+-	Make it possible to like/dislike any of the characters using Redux;
+-	Show the list of liked characters with filter Box using Redux;
+-	Make it possible to add a character's photo using Redux.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## View 
+![image](https://user-images.githubusercontent.com/46706194/148694140-484734c9-ce3a-4b52-af3b-2eb6c333159b.png)
+![image](https://user-images.githubusercontent.com/46706194/148694152-606a54e5-c472-4f12-8c16-075421fc2252.png)
