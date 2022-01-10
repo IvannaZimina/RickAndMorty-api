@@ -25,7 +25,7 @@ The page with info of characters was created with a card component from Material
 -  like icon;
 -  list of episodes as links.
 The like icon is functional to click. It changes color to red or grey if the user clicks on it – one of examples of UI of like/dislike. The episode also has its functional – roll down and roll up the list with link to episodes.
-Also, as a required parameter, the preload of the list of characters was added. You can see the gif with snail if the list is loading. If it takes more than one minute, because the work of api – please, update the pageю
+Also, as a required parameter, the preload of the list of characters was added. You can see the gif with snail if the list is loading. If it takes more than one minute, because the work of api – please, update the page.
 
 ## The next level of upgrading:
 -	SignIn by Facebook or Linkedin using Passport.js;
