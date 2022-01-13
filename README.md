@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Task
+Create a web-app with Rick and Morty characters and authorization via Google and GitHub.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Stack
+### Backend:
+JavaScript, Node.js, Express.js, the data were getting from (https://rickandmortyapi.com/documentation .)
+### Frontend
+JavaScript, React, Redux, localStorage via redux-persist, Sass (SCSS).
+### Libraries
+Material UI, redux-persist, passport.js, immutability-helper, cookieSession
 
-## Available Scripts
+### Description
+There was created a web-app with Create React App and Node.js (express-generator). The last was used for the configuration and connection of passport.
 
-In the project directory, you can run:
+#### Backend
+There was created Node.js app with Express.js using MVC. There were created next modules:
+-	Server module: contain main app file with base configurations of app, “cookieSession” and “passport”;
+-	Configuration module: contain configuration of: PORT, passport Strategies, deepfreeze;
+-	Routes module: built REST API architecture using GET methods for response of social API.
+The passport.js was connected to authorize users via Google and GitHub. LinkedIn connection was not realized because it need to create own Company page in LinkedIn. But the Strategy of connection is the same.
 
-### `npm start`
+#### Frontend
+There were developed the following pages:
+- the main page with a list of characters, autocomplete and filter;
+- the login page with authorization via Google and GitHub;
+- the page with info about a character from a list (unable only for authorized users).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+There is the Header block fixed on the top of web-app with two functional options:
+-	logo of web-app as navigation to home page;
+-	authorization block where user can press Login / Logout buttons.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The Redux was used as store of information of characters and for making some functions with action creators and reducer.
+The logic of authorization is that unknown user can see only main page. And authorized user can follow the page with the separate character additionally. If unknown user tries to click on the character in the list on the main page – web-app redirect him to the login page. There are avatar and name of user are in the Header block after user log in.
 
-### `npm test`
+On the main page, there were created a list of characters, autocomplete field and checkbox to filter the characters which were marked as like*. The Material UI library was used for the formalization components. The name and status of characters are the link to the character info page (an ID of the character used for navigation in url). The heart icon shows the status like of character: like or dislike.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The autocomplete on the main page allows to filter the one of characters and reset the filter (back to a list of characters). The list of characters is transformed via Redux. The actions with autocomplete update the array of characters in redux store*. Also, it changes in local Storage automatically because of using redux-persist library.
 
-### `npm run build`
+The page with info of characters was created with a card component also from Material UI library. It contains the following information: name of character; status of character; date of creation; avatar of character; gender and species fields; like icon; list of episodes as links.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The like icon is functional to click. It changes color to red or grey if the user clicks on it – one of examples of UI of like/dislike. The episode arrow button also has its functional – roll down and roll up the list with link to episodes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Also, as a required parameter, the preload of the list of characters was added. You can see the gif with snail if the list is loading. If it takes more than one minute, because the work of api – please, update the page.
+*when autocomplete of filter is canceled – the first state of list uploads without likes mark because the DB is absent.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### The next level of upgrading
+-	Make it possible to add a character's photo and save it to the DB using multer library.
+-	Connect the DB to save the like status of characters and show them in list.
 
-### `npm run eject`
+### View 
+![image](https://user-images.githubusercontent.com/46706194/149407829-4abb7a05-2a40-42fc-92b3-8e7061131898.png)
+![image](https://user-images.githubusercontent.com/46706194/149407840-343a584e-e8c3-4500-9f4c-4b804b4ee9c8.png)
+![image](https://user-images.githubusercontent.com/46706194/149407858-e05be9cf-4867-4ed4-a03d-78302d98d3eb.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
