@@ -1,0 +1,63 @@
+.favotieCard {
+    color: red;          
+}
+
+.likeBtn {
+    color: grey
+}
+
+.containerCard {
+    margin: 0 auto;
+    padding: 130px 0 0 0;
+    width: 70%;
+
+    .backBtn {
+        padding: 10px;
+        width: 100px;
+        border: 1px solid rgb(204, 203, 203);
+        background-color: #ffffff00;
+        margin-bottom: 20px;
+        border-radius: 5px;
+
+        &:hover {
+            box-shadow: 0px 0px 6px 3px rgba(34, 60, 80, 0.2);
+        }
+    }
+
+    .characterCard {
+        width: 400px;
+
+        .titleCard {
+            width: 350px;
+            margin: 0 4%;
+        }
+    
+        .avatarCard, .suTextCard {
+            width: 350px;
+            margin: 2% 6%;
+        }
+    
+        .actionsOfCard {
+            width: 350px;
+            margin: 2% 6%;
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .episodesCard {
+            display: flex;
+            justify-content: space-between;
+            width: 100px;
+            padding: 5px;
+
+            &:hover {
+                box-shadow: 0px 0px 6px 3px rgba(34, 60, 80, 0.2);
+            }
+    
+            p, button {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

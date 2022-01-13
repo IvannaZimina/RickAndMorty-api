@@ -1,0 +1,56 @@
+.charBlock {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.autocomleteBlock {
+    padding: 120px 0 0 0;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    .filterLikeCheck {
+        display: flex;
+        justify-content: space-around;
+        width: 200px;
+        align-items: center;
+        padding: 10px;
+        margin-top: 10px;
+
+        &:hover {
+            box-shadow: 0px 0px 6px 3px rgba(34, 60, 80, 0.2);
+        }
+    }
+}
+
+.favotieCard {
+    color: red;          
+}
+
+.likeBtn {
+    color: grey
+}
+
+.charList {
+    width: 100%;
+    max-width: 360px;
+    padding: 0;
+
+    li {
+        padding: 0 0 0 30px;
+        
+        a {
+            text-decoration: none;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 6px 3px rgba(34, 60, 80, 0.2);
+        }
+    
+    }
+
+    .avatar {
+        width: 50px;
+    }
+
+}
