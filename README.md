@@ -3,11 +3,11 @@ Create a basic web-app with Rick and Morty characters.
 
 ## Stack
 ### Backend
-The data were getting from (https://rickandmortyapi.com/documentation .)
+The data were getting from (https://rickandmortyapi.com/documentation).
 ### Frontend
 JavaScript, React, Redux, localStorage via redux-persist, Sass (SCSS).
 ### Libraries
-Material UI, redux-persist.
+Material UI, redux-persist, passport.js, immutability-helper, cookieSession.
 
 ## Description 
 There was created a web-app with Create React App and Node.js (express-generator). The last was used for the configuration and connection of passport.
