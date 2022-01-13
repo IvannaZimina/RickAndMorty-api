@@ -36,6 +36,10 @@ Also, as a required parameter, the preload of the list of characters was added. 
 ## Environment
 Clone this repository to your machine. Use the npm or yarn install to install the dependensies of app. Use VS-Code to work with the app.
 
-## View 
-![image](https://user-images.githubusercontent.com/46706194/148694140-484734c9-ce3a-4b52-af3b-2eb6c333159b.png)
-![image](https://user-images.githubusercontent.com/46706194/148694152-606a54e5-c472-4f12-8c16-075421fc2252.png)
+## View
+![image](https://user-images.githubusercontent.com/46706194/149401444-28aa685a-440e-4c4b-8784-b8b91a7eccd7.png)
+![image](https://user-images.githubusercontent.com/46706194/149402298-493706d6-7075-4c83-9685-a70db52eb8db.png)
+![image](https://user-images.githubusercontent.com/46706194/149401933-ff2e5535-cc67-4555-84b8-91854d61c6b7.png)
+
+
+
