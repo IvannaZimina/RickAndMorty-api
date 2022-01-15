@@ -13,7 +13,7 @@ Material UI, redux-persist, passport.js, immutability-helper, cookieSession
 There was created a web-app with Create React App and Node.js (express-generator). The last was used for the configuration and connection of passport.
 
 #### Backend
-There was created Node.js app with Express.js using MVC. There were created next modules:
+There was created Node.js app with Express.js using MVC. The next modules were created:
 -	Server module: contain main app file with base configurations of app, “cookieSession” and “passport”;
 -	Configuration module: contain configuration of: PORT, passport Strategies, deepfreeze;
 -	Routes module: built REST API architecture using GET methods for response of social API.
